@@ -18,7 +18,7 @@
   
  ### 3、在项目中使用：
   
-  <com.zyl.ezlibrary.ExpandableTextViews
+     <com.zyl.ezlibrary.ExpandableTextViews
             android:id="@+id/tvTest"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
@@ -35,7 +35,7 @@
             app:ep_need_mention="false"
             app:ep_need_url="true"/>
             
-            其他方法在library中查看
+        其他方法在library中查看
 
         tvTest.setContent(a)
 
