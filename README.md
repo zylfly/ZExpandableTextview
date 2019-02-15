@@ -18,7 +18,7 @@
   
  ### 3、在项目中使用：
   
-     <com.zyl.ezlibrary.ExpandableTextViews
+        <com.zyl.ezlibrary.ExpandableTextViews
             android:id="@+id/tvTest"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
