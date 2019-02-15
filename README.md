@@ -17,7 +17,20 @@
     }
   
  ### 3、在项目中使用：
-  
+            
+        其他方法在library中查看
+
+        tvTest.setContent(a)
+
+        tvTest.setLinkClickListener { type, content, selfContent ->
+            //根据类型去判断
+            when (type) {
+                LinkType.LINK_TYPE -> Toast.makeText(this, "你点击了链接 内容是：$content", Toast.LENGTH_SHORT).show()
+                LinkType.MENTION_TYPE -> Toast.makeText(this, "你点击了@用户 内容是：$content", Toast.LENGTH_SHORT).show()
+                LinkType.SELF -> Toast.makeText(this, "你点击了自定义规则 内容是：$content$selfContent",Toast.LENGTH_SHORT).show()
+            }
+        }
+        
         <com.zyl.ezlibrary.ExpandableTextViews
             android:id="@+id/tvTest"
             android:layout_width="fill_parent"
@@ -34,16 +47,3 @@
             app:ep_need_expand="true"
             app:ep_need_mention="false"
             app:ep_need_url="true"/>
-            
-        其他方法在library中查看
-
-        tvTest.setContent(a)
-
-        tvTest.setLinkClickListener { type, content, selfContent ->
-            //根据类型去判断
-            when (type) {
-                LinkType.LINK_TYPE -> Toast.makeText(this, "你点击了链接 内容是：$content", Toast.LENGTH_SHORT).show()
-                LinkType.MENTION_TYPE -> Toast.makeText(this, "你点击了@用户 内容是：$content", Toast.LENGTH_SHORT).show()
-                LinkType.SELF -> Toast.makeText(this, "你点击了自定义规则 内容是：$content$selfContent",Toast.LENGTH_SHORT).show()
-            }
-        }
