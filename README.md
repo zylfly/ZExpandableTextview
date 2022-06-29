@@ -3,7 +3,7 @@
 
 ### 1、在自己项目中添加本项目依赖：
 
-    implementation 'com.github.zylRookie:ZExpandableTextview:v1.0.0'
+    implementation 'com.github.zylfly:ZExpandableTextview:v1.0.0'
 
 ### 2、在根目录中添加：
 
